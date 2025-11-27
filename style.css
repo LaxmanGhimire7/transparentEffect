@@ -7,6 +7,8 @@ html,
 body {
 height: 100%;
 width: 100%;
+background-color: black;
+color: white;
 }
 
 :root{
@@ -17,7 +19,6 @@ width: 100%;
 main{
     height: 100%;
     width: 100%;
-    position: relative;
 }
 
 video{
@@ -26,13 +27,11 @@ video{
     object-fit: cover;
 }
 
-.overlay {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(
-      circle 100px at var(--x) var(--y),rgba(0, 0, 0, 0), rgb(0, 0, 0)
-  );;
-
+.box{
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(150px at var(--x) var(--y), rgba(0, 0, 0, 0), black);
+    position: absolute;
+    inset: 0;
 }
+
